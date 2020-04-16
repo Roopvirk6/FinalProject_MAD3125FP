@@ -15,7 +15,7 @@ public class Singleton
         Mobile m1 = new Mobile(1,"02-01-2020","Mobile",1000.0,"rogers","calling+talktime",12455,10,60);
        // c1.setBill(m1);
 
-       // Customer c2 = new Customer(2,"monica","sharma","monica@gmail.com",2000,,"Internet");
+        Customer c2 = new Customer(2,"monica","sharma","monica@gmail.com",2000,,"Internet");
         Internet i1 = new Internet(2,"03-01-2020","Internet",300.0,"bell",56);
          c2.setBill(i1);
 
