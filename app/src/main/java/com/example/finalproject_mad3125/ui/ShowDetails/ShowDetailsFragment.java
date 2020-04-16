@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 
 import com.example.finalproject_mad3125.Customer;
 import com.example.finalproject_mad3125.R;
+import com.example.finalproject_mad3125.adapters.CustomerListAdapter;
 
 import java.util.List;
 
@@ -22,6 +23,7 @@ public class ShowDetailsFragment extends Fragment {
 
     private RecyclerView emplistrv;
     private List<Customer> customerList;
+    private CustomerListAdapter demoAdapter;
 
     private ShowDetailsViewModel mViewModel;
 
