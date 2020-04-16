@@ -61,7 +61,7 @@ public class Singleton
 
     public int arraySize()
     {
-        
+        return arrayListCustomer.size();
     }
 
 
