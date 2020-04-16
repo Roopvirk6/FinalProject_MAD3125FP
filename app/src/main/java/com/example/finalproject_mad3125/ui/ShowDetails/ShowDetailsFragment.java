@@ -38,8 +38,11 @@ public class ShowDetailsFragment extends Fragment {
     private void initViews()
     {
         populateData();
+        demoAdapter = new CustomerListAdapter(customerList);
 
     }
+
+
 
 
 
