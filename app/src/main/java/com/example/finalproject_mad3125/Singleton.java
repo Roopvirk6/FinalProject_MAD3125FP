@@ -32,7 +32,7 @@ public class Singleton
             myObj = new Singleton();
         }
         return myObj;
-        
+
     }
 
     public
