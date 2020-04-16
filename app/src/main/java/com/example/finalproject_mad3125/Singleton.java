@@ -35,5 +35,9 @@ public class Singleton
 
     }
 
-    public
+    public void addCustomer(Customer e)
+    {
+        arrayListCustomer.add(e);
+    }
+
 }
