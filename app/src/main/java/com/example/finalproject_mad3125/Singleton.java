@@ -24,4 +24,9 @@ public class Singleton
          c3.setBill(h1);
 
     }
+
+    public static Singleton getInstance()
+    {
+
+    }
 }
