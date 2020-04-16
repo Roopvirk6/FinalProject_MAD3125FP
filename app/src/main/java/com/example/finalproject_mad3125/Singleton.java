@@ -59,6 +59,11 @@ public class Singleton
 
     }
 
+    public int arraySize()
+    {
+        
+    }
+
 
 
 
