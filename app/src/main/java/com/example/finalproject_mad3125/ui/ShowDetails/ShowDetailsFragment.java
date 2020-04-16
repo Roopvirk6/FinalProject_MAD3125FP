@@ -26,6 +26,17 @@ public class ShowDetailsFragment extends Fragment {
     private List<Customer> customerList;
     private CustomerListAdapter demoAdapter;
     Singleton singleton= Singleton.getInstance();
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             ViewGroup container, Bundle savedInstanceState) {
+
+        View root = inflater.inflate(R.layout.show_details_fragment3, container, false);
+        emplistrv = root.findViewById(R.id.emplistrv);
+        initViews();
+        return root;
+    }
+
+
+
 
     private ShowDetailsViewModel mViewModel;
 
@@ -36,7 +47,9 @@ public class ShowDetailsFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
+
         return inflater.inflate(R.layout.show_details_fragment3, container, false);
+
     }
 
     @Override
