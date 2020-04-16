@@ -49,5 +49,16 @@ public class Singleton
         return null;
     }
 
+    public ArrayList<Customer> getCustomer()
+    {
+        if (arrayListCustomer.size() > 0)
+        {
+            return arrayListCustomer;
+        }
+
+    }
+
+
+
 
 }
