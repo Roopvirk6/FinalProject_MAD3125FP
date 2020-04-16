@@ -55,6 +55,7 @@ public class Singleton
         {
             return arrayListCustomer;
         }
+        return null;
 
     }
 
