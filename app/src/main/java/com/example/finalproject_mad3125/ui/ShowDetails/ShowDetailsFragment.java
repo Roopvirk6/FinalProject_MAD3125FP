@@ -19,6 +19,7 @@ import com.example.finalproject_mad3125.R;
 import com.example.finalproject_mad3125.Singleton;
 import com.example.finalproject_mad3125.adapters.CustomerListAdapter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ShowDetailsFragment extends Fragment {
@@ -47,7 +48,7 @@ public class ShowDetailsFragment extends Fragment {
     }
     private void populateData()
     {
-        
+        customerList = new ArrayList<>();
     }
 
 
