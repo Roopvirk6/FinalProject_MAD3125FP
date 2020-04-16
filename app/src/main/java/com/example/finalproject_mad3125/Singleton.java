@@ -40,4 +40,10 @@ public class Singleton
         arrayListCustomer.add(e);
     }
 
+    public Customer getCustomerByIndex(int index)
+    {
+        
+    }
+
+
 }
