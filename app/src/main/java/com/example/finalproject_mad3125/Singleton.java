@@ -17,7 +17,7 @@ public class Singleton
 
        // Customer c2 = new Customer(2,"monica","sharma","monica@gmail.com",2000,,"Internet");
         Internet i1 = new Internet(2,"03-01-2020","Internet",300.0,"bell",56);
-        // c2.setBill(i1);
+         c2.setBill(i1);
 
          Customer c3 = new Customer(3,"shilpa","sharma","shilpa@gmail.com",300,,"Hydro");
          Hydro h1 = new Hydro(3,"03-06-2020","Hydro",450.0,"torontohydro",200);
