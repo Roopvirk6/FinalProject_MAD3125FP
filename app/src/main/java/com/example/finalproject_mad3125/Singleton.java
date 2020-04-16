@@ -20,7 +20,7 @@ public class Singleton
          c2.setBill(i1);
 
          Customer c3 = new Customer(3,"shilpa","sharma","shilpa@gmail.com",300,,"Hydro");
-         Hydro h1 = new Hydro();
+         Hydro h1 = new Hydro(3,"03-06-2020","Hydro",450.0,"torontohydro","100");
 
     }
 }
