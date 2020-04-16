@@ -19,5 +19,7 @@ public class Singleton
         Internet i1 = new Internet(2,"03-01-2020","Internet",300.0,"bell",56);
          c2.setBill(i1);
 
+         Customer c3 = new Customer();
+
     }
 }
