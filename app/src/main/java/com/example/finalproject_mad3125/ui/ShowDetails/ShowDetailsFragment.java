@@ -27,7 +27,7 @@ public class ShowDetailsFragment extends Fragment {
     private RecyclerView emplistrv;
     private List<Customer> customerList;
     private CustomerListAdapter demoAdapter;
-    //Singleton singleton= Singleton.getInstance();
+    Singleton singleton= Singleton.getInstance();
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
@@ -51,13 +51,5 @@ public class ShowDetailsFragment extends Fragment {
         customerList = new ArrayList<>();
         customerList=singleton.getEmployees();
     }
-
-
-
-
-
-
-
-
 
 }
