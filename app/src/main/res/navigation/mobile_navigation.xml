@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.finalproject_mad3125.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_add_customer"
+        android:name="com.example.finalproject_mad3125.ui.AddCustomer.GalleryFragment"
+        android:label="Add Employee"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_show"
+        android:name="com.example.finalproject_mad3125.ui.ShowDetails.ShowDetailsFragment"
+        android:label="Employee List"
+        tools:layout="@layout/show_details_fragment3" />
+
+    <fragment
+        android:id="@+id/add_new_bill"
+        android:name="com.example.finalproject_mad3125.ui.AddNewBill.AddNewBillFragment"
+        android:label="Help"
+        tools:layout="@layout/add_new_bill_fragment" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.finalproject_mad3125.ui.Logout.SlideshowFragment"
+        android:label="Logout"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>
