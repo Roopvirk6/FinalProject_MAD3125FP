@@ -49,6 +49,7 @@ public class ShowDetailsFragment extends Fragment {
     private void populateData()
     {
         customerList = new ArrayList<>();
+        customerList=singleton.getEmployees();
     }
 
 
