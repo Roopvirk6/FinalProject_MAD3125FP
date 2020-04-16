@@ -41,6 +41,7 @@ public class ShowDetailsFragment extends Fragment {
         populateData();
         demoAdapter = new CustomerListAdapter(customerList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
+        emplistrv .setLayoutManager(mLayoutManager);
 
     }
 
