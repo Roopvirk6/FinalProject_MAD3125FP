@@ -44,7 +44,7 @@ public class Singleton
     {
         if (index < arrayListCustomer.size())
         {
-            
+            return arrayListCustomer.get(index);
         }
     }
 
