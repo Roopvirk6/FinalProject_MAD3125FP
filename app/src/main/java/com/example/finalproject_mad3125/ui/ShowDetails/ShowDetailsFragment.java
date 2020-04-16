@@ -35,28 +35,15 @@ public class ShowDetailsFragment extends Fragment {
         return root;
     }
 
-
-
-
-    private ShowDetailsViewModel mViewModel;
-
-    public static ShowDetailsFragment newInstance() {
-        return new ShowDetailsFragment();
-    }
-
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
-
-        return inflater.inflate(R.layout.show_details_fragment3, container, false);
+    private void initViews()
+    {
+        populateData();
 
     }
 
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(ShowDetailsViewModel.class);
-        // TODO: Use the ViewModel
-    }
+
+
+
+    
 
 }
