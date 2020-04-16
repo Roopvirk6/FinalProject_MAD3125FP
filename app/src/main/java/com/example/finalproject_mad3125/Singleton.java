@@ -46,6 +46,7 @@ public class Singleton
         {
             return arrayListCustomer.get(index);
         }
+        return null;
     }
 
 
