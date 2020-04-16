@@ -5,14 +5,14 @@ import java.io.Serializable;
 public class Hydro extends Bill implements Serializable
 {
     private String agencyName;
-    private String unitConsumed;
+    private int unitConsumed;
 
     public Hydro()
     {
         super();
     }
 
-    public Hydro(int billID, String billDate, String billType, double billAmount, String agencyName, String unitConsumed)
+    public Hydro(int billID, String billDate, String billType, double billAmount, String agencyName, int unitConsumed)
     {
         super(billID,billDate,"Hydro",billAmount);
         this.agencyName = agencyName;
@@ -27,11 +27,11 @@ public class Hydro extends Bill implements Serializable
         this.agencyName = agencyName;
     }
 
-    public String getUnitConsumed() {
+    public int getUnitConsumed() {
         return unitConsumed;
     }
 
-    public void setUnitConsumed(String unitConsumed) {
+    public void setUnitConsumed(int unitConsumed) {
         this.unitConsumed = unitConsumed;
     }
 
