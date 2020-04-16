@@ -17,6 +17,7 @@ public class Singleton
 
         Customer c2 = new Customer(2,"monica","sharma","monicasharma@gmail.com",2000,,"Internet");
         Internet i1 = new Internet(2,"03-01-2020","Internet",300.0,"bell",56);
+       c2.setBill(i1);
 
     }
 }
