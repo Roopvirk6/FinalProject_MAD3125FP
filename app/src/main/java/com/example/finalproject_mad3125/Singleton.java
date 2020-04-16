@@ -42,7 +42,10 @@ public class Singleton
 
     public Customer getCustomerByIndex(int index)
     {
-        
+        if (index < arrayListCustomer.size())
+        {
+            
+        }
     }
 
 
