@@ -33,7 +33,7 @@ public class HomeFragment extends Fragment {
         TextView numCust = root.findViewById(R.id.numberCust);
         Date todayDate = new Date();
         DateFormat dateFormat = DateFormat.getDateInstance();
-        
+        String todayDateTimeString = dateFormat.format(todayDate);
         return root;
     }
 }
