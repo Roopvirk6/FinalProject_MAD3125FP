@@ -15,6 +15,8 @@ import androidx.lifecycle.ViewModelProviders;
 import com.example.finalproject_mad3125.R;
 import com.example.finalproject_mad3125.Singleton;
 
+import java.util.Date;
+
 public class HomeFragment extends Fragment {
 
     Singleton singleton= Singleton.getInstance();
@@ -28,6 +30,7 @@ public class HomeFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         final TextView dateTextView = root.findViewById(R.id.text_date);
         TextView numCust = root.findViewById(R.id.numberCust);
+        Date todayDate = new Date();
         homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
