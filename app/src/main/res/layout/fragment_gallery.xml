@@ -16,7 +16,7 @@
     <LinearLayout
         android:id="@+id/linearMain"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
     <EditText
@@ -78,17 +78,54 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/btnSave"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/linearHydroBill"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical|center_horizontal"
-            android:padding="10dp"
-            android:text="Save" />
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/edtAgencyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="Agency Name"/>
 
+            <EditText
+                android:id="@+id/edtUnitsConsumed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="units consumed"
+                android:inputType="numberDecimal"/>
+        </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/linearInternet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
+            <EditText
+                android:id="@+id/edtProviderName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="Provider Name" />
 
+            <EditText
+                android:id="@+id/edtInternetUsed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="Provider Name" />
+
+    </LinearLayout>
     </LinearLayout>
     </ScrollView>
 
