@@ -75,7 +75,20 @@ public class GalleryFragment extends Fragment {
             }
 
         });
+
+        btnSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                addData();
+                getActivity().onBackPressed();
+            }
+        });
+
+        return root;
     }
+
+    
 
 
 }
