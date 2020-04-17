@@ -23,7 +23,7 @@ import com.example.finalproject_mad3125.Singleton;
 public class GalleryFragment extends Fragment {
 
 
-    Bundle bundle= new Bundle();
+    Bundle bundle = new Bundle();
     EditText edtCustID;
     EditText edtFirstName;
     EditText edtLastName;
@@ -35,9 +35,8 @@ public class GalleryFragment extends Fragment {
     RadioButton rbMobile;
     Button btnSave;
 
-    Singleton singleton= Singleton.getInstance();
+    Singleton singleton = Singleton.getInstance();
     Bill bill = null;
-
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -54,7 +53,29 @@ public class GalleryFragment extends Fragment {
         rbHydro = root.findViewById(R.id.rbHydro);
         rbInternet = root.findViewById(R.id.rbInternet);
         rbMobile = root.findViewById(R.id.rbMobile);
+        rgbBillType.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
 
 
+                switch (i) {
+                    case R.id.rbHydro:
+
+                        break;
+
+                    case R.id.rbInternet:
+
+
+                        break;
+
+                    case R.id.rbMobile:
+
+                        break;
+                }
+            }
+
+        });
     }
+
+
 }
