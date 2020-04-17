@@ -27,8 +27,8 @@ public class GalleryFragment extends Fragment {
     EditText edtFirstName;
     EditText edtLastName;
     EditText edtEmail;
-    EditText amount;
-    RadioGroup rgBillType;
+    EditText edtAmount;
+    RadioGroup rgbBillType;
     RadioButton rbHydro;
     RadioButton rbInternet;
     RadioButton rbMobile;
@@ -42,6 +42,9 @@ public class GalleryFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_gallery, container, false);
+        edtCustID = root.findViewById(R.id.edtCustID);
+        edtFirstName = root.findViewById(R.id.edtFirstName);
+        edtAmount = root.findViewById(R.id.edtAmount);
 
 
     }
