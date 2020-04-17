@@ -1,5 +1,6 @@
 package com.example.finalproject_mad3125.ui.AddCustomer;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,6 +21,7 @@ import com.example.finalproject_mad3125.Internet;
 import com.example.finalproject_mad3125.Mobile;
 import com.example.finalproject_mad3125.R;
 import com.example.finalproject_mad3125.Singleton;
+import com.example.finalproject_mad3125.ui.ShowDetails.ShowDetailsFragment;
 
 public class GalleryFragment extends Fragment {
 
