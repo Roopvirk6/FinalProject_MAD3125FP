@@ -101,21 +101,31 @@ public class GalleryFragment extends Fragment {
 
     public Customer addData()
     {
+        firstname = edtFirstName.getText().toString();
+        lastName = edtLastName.getText().toString();
+        custID = edtCustID.getText().toString();
+        email=edtEmail.getText().toString();
+        amount = Double.parseDouble(edtAmount.getText().toString());
+        Customer customer = new Customer();
+        customer.setCustomerFirstName(firstname);
+        customer.setCustomerLastName(lastName);
+        customer.setCustomerId(custID);
+        customer.setCustomerEmailAddress(email);
+        customer.setAmount(amount);
+        addBillData(customer);
+        singleton.addCustomer(customer);
+
+
+
+    }
+
+
+    public Customer addBillData(Customer customer)
+    {
         if (rbHydro.isChecked()){
-            firstname = edtFirstName.getText().toString();
-            lastName = edtLastName.getText().toString();
-            custID = edtCustID.getText().toString();
-            email=edtEmail.getText().toString();
-            amount = Double.parseDouble(edtAmount.getText().toString());
-            Customer customer1 = new Customer();
-            customer1.setCustomerFirstName(firstname);
-            customer1.setCustomerLastName(lastName);
-            customer1.setCustomerId(custID);
-            customer1.setCustomerEmailAddress(email);
-            customer1.setAmount(amount);
-            singleton.addCustomer(customer1);
+
             Hydro hydro = new Hydro();
-            hydro.setBillID(custID);
+            hydro.setBillID(edtCustID.getText().toString());
             hydro.setBillType("Hydro");
             hydro.setBillDate("02-01-2020");
             hydro.setBillAmount(200.0);
@@ -127,20 +137,9 @@ public class GalleryFragment extends Fragment {
 
         if (rbInternet.isChecked())
         {
-            firstname = edtFirstName.getText().toString();
-            lastName = edtLastName.getText().toString();
-            custID = edtCustID.getText().toString();
-            email=edtEmail.getText().toString();
-            amount = Double.parseDouble(edtAmount.getText().toString());
-            Customer customer2 = new Customer();
-            customer2.setCustomerFirstName(firstname);
-            customer2.setCustomerLastName(lastName);
-            customer2.setCustomerId(custID);
-            customer2.setCustomerEmailAddress(email);
-            customer2.setAmount(amount);
-            singleton.addCustomer(customer2);
+
             Internet internet = new Internet();
-            internet.setBillID(custID);
+            internet.setBillID(edtCustID.getText().toString());
             internet.setBillType("Internet");
             internet.setBillDate("03-02-2020");
             internet.setBillAmount(400);
@@ -152,7 +151,7 @@ public class GalleryFragment extends Fragment {
         if (rbMobile.isChecked())
         {
             Mobile mobile = new Mobile();
-            mobile.setBillID(custID);
+            mobile.setBillID(edtCustID.getText().toString());
             mobile.setBillType("Mobile");
             mobile.setBillDate("04-01-2020");
             mobile.setBillAmount(600.0);
