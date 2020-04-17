@@ -13,8 +13,11 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.finalproject_mad3125.R;
+import com.example.finalproject_mad3125.Singleton;
 
 public class HomeFragment extends Fragment {
+
+    Singleton singleton= Singleton.getInstance();
 
     private HomeViewModel homeViewModel;
 
