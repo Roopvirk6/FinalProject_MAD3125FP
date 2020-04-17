@@ -34,6 +34,7 @@ public class HomeFragment extends Fragment {
         Date todayDate = new Date();
         DateFormat dateFormat = DateFormat.getDateInstance();
         String todayDateTimeString = dateFormat.format(todayDate);
+        dateTextView.setText(todayDateTimeString);
         return root;
     }
 }
