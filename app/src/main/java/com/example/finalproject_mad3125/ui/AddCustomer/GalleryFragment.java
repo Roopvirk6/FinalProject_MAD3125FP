@@ -20,6 +20,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.example.finalproject_mad3125.Bill;
 import com.example.finalproject_mad3125.Customer;
 import com.example.finalproject_mad3125.Hydro;
+import com.example.finalproject_mad3125.Internet;
 import com.example.finalproject_mad3125.R;
 import com.example.finalproject_mad3125.Singleton;
 
@@ -125,7 +126,27 @@ public class GalleryFragment extends Fragment {
 
         if (rbInternet.isChecked())
         {
-            
+            firstname = edtFirstName.getText().toString();
+            lastName = edtLastName.getText().toString();
+            custID = edtCustID.getText().toString();
+            email=edtEmail.getText().toString();
+            amount = Double.parseDouble(edtAmount.getText().toString());
+            Customer customer2 = new Customer();
+            customer2.setCustomerFirstName(firstname);
+            customer2.setCustomerLastName(lastName);
+            customer2.setCustomerId(custID);
+            customer2.setCustomerEmailAddress(email);
+            customer2.setAmount(amount);
+            singleton.addCustomer(customer2);
+            Internet internet = new Internet();
+            internet.setBillID(custID);
+            internet.setBillType("Internet");
+            internet.setBillDate();
+            internet.setBillAmount();
+            customer.setBillType("Internet");
+            customer.setBill(internet);
+            bill = internet;
+
         }
 
     }
