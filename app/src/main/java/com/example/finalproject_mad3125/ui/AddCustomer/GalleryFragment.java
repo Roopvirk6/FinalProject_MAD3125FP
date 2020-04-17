@@ -1,7 +1,6 @@
 package com.example.finalproject_mad3125.ui.AddCustomer;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,13 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
 
 import com.example.finalproject_mad3125.Bill;
 import com.example.finalproject_mad3125.Customer;
@@ -114,13 +109,14 @@ public class GalleryFragment extends Fragment {
         customer.setAmount(amount);
         addBillData(customer);
         singleton.addCustomer(customer);
+        return customer;
 
 
 
     }
 
 
-    public Customer addBillData(Customer customer)
+    public void addBillData(Customer cust)
     {
         if (rbHydro.isChecked()){
 
@@ -129,8 +125,8 @@ public class GalleryFragment extends Fragment {
             hydro.setBillType("Hydro");
             hydro.setBillDate("02-01-2020");
             hydro.setBillAmount(200.0);
-            customer.setBillType("Hydro");
-            customer.setBill(hydro);
+            cust.setBillType("Hydro");
+            cust.setBill(hydro);
             bill = hydro;
 
         }
@@ -143,8 +139,8 @@ public class GalleryFragment extends Fragment {
             internet.setBillType("Internet");
             internet.setBillDate("03-02-2020");
             internet.setBillAmount(400);
-            customer.setBillType("Internet");
-            customer.setBill(internet);
+            cust.setBillType("Internet");
+            cust.setBill(internet);
             bill = internet;
 
         }
@@ -155,11 +151,11 @@ public class GalleryFragment extends Fragment {
             mobile.setBillType("Mobile");
             mobile.setBillDate("04-01-2020");
             mobile.setBillAmount(600.0);
-            customer.setBill(mobile);
-            customer.setBillType("Mobile");
+            cust.setBill(mobile);
+            cust.setBillType("Mobile");
             bill = mobile;
         }
-
+        
     }
 
 
