@@ -21,6 +21,7 @@ import com.example.finalproject_mad3125.Bill;
 import com.example.finalproject_mad3125.Customer;
 import com.example.finalproject_mad3125.Hydro;
 import com.example.finalproject_mad3125.Internet;
+import com.example.finalproject_mad3125.Mobile;
 import com.example.finalproject_mad3125.R;
 import com.example.finalproject_mad3125.Singleton;
 
@@ -147,6 +148,17 @@ public class GalleryFragment extends Fragment {
             customer.setBill(internet);
             bill = internet;
 
+        }
+        if (rbMobile.isChecked())
+        {
+            Mobile mobile = new Mobile();
+            mobile.setBillID(custID);
+            mobile.setBillType("Mobile");
+            mobile.setBillDate("04-01-2020");
+            mobile.setBillAmount(600.0);
+            customer.setBill(mobile);
+            customer.setBillType("Mobile");
+            bill = mobile;
         }
 
     }
