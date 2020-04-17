@@ -141,8 +141,8 @@ public class GalleryFragment extends Fragment {
             Internet internet = new Internet();
             internet.setBillID(custID);
             internet.setBillType("Internet");
-            internet.setBillDate();
-            internet.setBillAmount();
+            internet.setBillDate("03-02-2020");
+            internet.setBillAmount(400);
             customer.setBillType("Internet");
             customer.setBill(internet);
             bill = internet;
