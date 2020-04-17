@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
@@ -34,6 +35,7 @@ public class GalleryFragment extends Fragment {
     RadioButton rbInternet;
     RadioButton rbMobile;
     Button btnSave;
+    LinearLayout linearBillType;
 
     Singleton singleton = Singleton.getInstance();
     String firstname;
@@ -59,6 +61,7 @@ public class GalleryFragment extends Fragment {
         rbHydro = root.findViewById(R.id.rbHydro);
         rbInternet = root.findViewById(R.id.rbInternet);
         rbMobile = root.findViewById(R.id.rbMobile);
+        linearBillType = root.findViewById(R.id.linearBillType);
         rgbBillType.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -155,7 +158,7 @@ public class GalleryFragment extends Fragment {
             cust.setBillType("Mobile");
             bill = mobile;
         }
-        
+
     }
 
 
