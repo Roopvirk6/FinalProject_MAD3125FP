@@ -1,6 +1,7 @@
 package com.example.finalproject_mad3125.ui.AddCustomer;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.finalproject_mad3125.Bill;
 import com.example.finalproject_mad3125.Customer;
+import com.example.finalproject_mad3125.Hydro;
 import com.example.finalproject_mad3125.R;
 import com.example.finalproject_mad3125.Singleton;
 
@@ -37,6 +39,9 @@ public class GalleryFragment extends Fragment {
     Button btnSave;
 
     Singleton singleton = Singleton.getInstance();
+    String firstname;
+    String lastName;
+    String custID;
     Bill bill = null;
 
 
@@ -91,7 +96,17 @@ public class GalleryFragment extends Fragment {
 
     public Customer addData()
     {
-        
+        if (rbHydro.isChecked()){
+            firstname = edtFirstName.getText().toString();
+            lastName = edtLastName.getText().toString();
+            custID = edtCustID.getText().toString();
+
+           Hydro hydro = new Hydro();
+           // hydro.setBillID();
+            bill  = hydro;
+
+            //Log.d("DataEntry", String.valueOf(intern.getAge()));
+        }
 
     }
 
