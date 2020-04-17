@@ -44,6 +44,7 @@ public class GalleryFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_gallery, container, false);
         edtCustID = root.findViewById(R.id.edtCustID);
         edtFirstName = root.findViewById(R.id.edtFirstName);
+        edtLastName = root.findViewById(R.id.edtLastName);
         edtAmount = root.findViewById(R.id.edtAmount);
 
 
