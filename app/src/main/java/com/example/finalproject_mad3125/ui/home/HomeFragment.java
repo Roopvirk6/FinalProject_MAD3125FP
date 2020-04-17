@@ -15,6 +15,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.example.finalproject_mad3125.R;
 import com.example.finalproject_mad3125.Singleton;
 
+import java.text.DateFormat;
 import java.util.Date;
 
 public class HomeFragment extends Fragment {
@@ -31,12 +32,8 @@ public class HomeFragment extends Fragment {
         final TextView dateTextView = root.findViewById(R.id.text_date);
         TextView numCust = root.findViewById(R.id.numberCust);
         Date todayDate = new Date();
-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                dateTextView.setText(s);
-            }
-        });
+        DateFormat dateFormat = DateFormat.getDateInstance();
+        
         return root;
     }
 }
