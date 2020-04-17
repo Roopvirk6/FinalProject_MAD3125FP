@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.example.finalproject_mad3125.Bill;
 import com.example.finalproject_mad3125.R;
 import com.example.finalproject_mad3125.Singleton;
 
@@ -35,6 +36,7 @@ public class GalleryFragment extends Fragment {
     Button btnSave;
 
     Singleton singleton= Singleton.getInstance();
+    Bill bill = null;
 
 
 
@@ -47,6 +49,11 @@ public class GalleryFragment extends Fragment {
         edtLastName = root.findViewById(R.id.edtLastName);
         edtEmail = root.findViewById(R.id.edtEmail);
         edtAmount = root.findViewById(R.id.edtAmount);
+        btnSave = root.findViewById(R.id.btnSave);
+        rgbBillType = root.findViewById(R.id.rgbBillType);
+        rbHydro = root.findViewById(R.id.rbHydro);
+        rbInternet = root.findViewById(R.id.rbInternet);
+        rbMobile = root.findViewById(R.id.rbMobile);
 
 
     }
