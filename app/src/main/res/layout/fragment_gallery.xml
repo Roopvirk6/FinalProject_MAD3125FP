@@ -34,8 +34,34 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:hint="Enter First Name"
+        android:hint="Enter First Name"/>
+
+    <EditText
+        android:id="@+id/edtLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="Enter Last Name" />
+
+    <EditText
+        android:id="@+id/edtLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="Enter Email Address" />
+
+    <EditText
+        android:id="@+id/edtLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="Amount"
         android:inputType="numberDecimal"/>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
