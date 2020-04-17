@@ -22,12 +22,10 @@ public class HomeFragment extends Fragment {
 
     Singleton singleton= Singleton.getInstance();
 
-    private HomeViewModel homeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
+        
         View root = inflater.inflate(R.layout.fragment_home, container, false);
         final TextView dateTextView = root.findViewById(R.id.text_date);
         TextView numCust = root.findViewById(R.id.numberCust);
@@ -35,6 +33,7 @@ public class HomeFragment extends Fragment {
         DateFormat dateFormat = DateFormat.getDateInstance();
         String todayDateTimeString = dateFormat.format(todayDate);
         dateTextView.setText(todayDateTimeString);
+        numCust.setText("Number Of Customers : "+singleton.arraySize());
         return root;
     }
 }
