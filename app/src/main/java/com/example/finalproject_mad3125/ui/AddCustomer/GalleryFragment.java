@@ -17,6 +17,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.finalproject_mad3125.R;
+import com.example.finalproject_mad3125.Singleton;
 
 public class GalleryFragment extends Fragment {
 
@@ -32,17 +33,13 @@ public class GalleryFragment extends Fragment {
     RadioButton rbInternet;
     RadioButton rbMobile;
     Button btnSave;
+
+    Singleton singleton= Singleton.getInstance();
+    
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_gallery, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
-        return root;
+
     }
 }
