@@ -126,6 +126,58 @@
                 android:hint="Provider Name" />
 
     </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearMobileBill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/edtManufacturerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="Agency Name"/>
+
+            <EditText
+                android:id="@+id/edtPlanName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="units consumed"/>
+
+            <EditText
+                android:id="@+id/edtMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="Mobile Number"/>
+
+            <EditText
+                android:id="@+id/edtInternetGBUsed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="Internet consumed"/>
+
+
+            <EditText
+                android:id="@+id/edtMinutes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="Minutes"/>
+
+
+        </LinearLayout>
+
+
+
     </LinearLayout>
     </ScrollView>
 
