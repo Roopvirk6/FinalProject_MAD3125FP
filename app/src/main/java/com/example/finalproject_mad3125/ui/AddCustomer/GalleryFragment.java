@@ -45,6 +45,7 @@ public class GalleryFragment extends Fragment {
         edtCustID = root.findViewById(R.id.edtCustID);
         edtFirstName = root.findViewById(R.id.edtFirstName);
         edtLastName = root.findViewById(R.id.edtLastName);
+        edtEmail = root.findViewById(R.id.edtEmail);
         edtAmount = root.findViewById(R.id.edtAmount);
 
 
