@@ -42,7 +42,9 @@ public class GalleryFragment extends Fragment {
     String firstname;
     String lastName;
     String custID;
+    String email;
     Bill bill = null;
+    Customer customer = null;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -100,9 +102,10 @@ public class GalleryFragment extends Fragment {
             firstname = edtFirstName.getText().toString();
             lastName = edtLastName.getText().toString();
             custID = edtCustID.getText().toString();
+            email=edtEmail.getText().toString();
 
            Hydro hydro = new Hydro();
-           // hydro.setBillID();
+            hydro.setBillID();
             bill  = hydro;
 
             //Log.d("DataEntry", String.valueOf(intern.getAge()));
