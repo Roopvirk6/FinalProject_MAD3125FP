@@ -23,10 +23,10 @@ public class GalleryFragment extends Fragment {
 
 
     Bundle bundle= new Bundle();
-    EditText customerID;
-    EditText customerFirstName;
-    EditText customerLastName;
-    EditText customerEmail;
+    EditText edtCustID;
+    EditText edtFirstName;
+    EditText edtLastName;
+    EditText edtEmail;
     EditText amount;
     RadioGroup rgBillType;
     RadioButton rbHydro;
@@ -36,7 +36,7 @@ public class GalleryFragment extends Fragment {
 
     Singleton singleton= Singleton.getInstance();
 
-    
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
