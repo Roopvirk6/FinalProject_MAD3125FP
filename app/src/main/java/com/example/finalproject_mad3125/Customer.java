@@ -9,11 +9,11 @@ public class Customer implements Serializable
 {
 
 
-    private int customerId;
+    private String customerId;
     private String customerFirstName;
     private String customerLastName;
     private String customerEmailAddress;
-    private int amount;
+    private double amount;
 
     private Bill bill;
     private String billType;
@@ -42,8 +42,8 @@ public class Customer implements Serializable
 
     }
 
-    public Customer(int customerId,
-                    String customerFirstName, String customerLastName, String customerEmailAddress, int amount, String billType) {
+    public Customer(String customerId,
+                    String customerFirstName, String customerLastName, String customerEmailAddress, double amount, String billType) {
         this.customerId=customerId;
         this.customerFirstName=customerFirstName;
         this.customerLastName=customerLastName;
@@ -54,11 +54,11 @@ public class Customer implements Serializable
     }
 
 
-    public int getCustomerId() {
+    public String getCustomerId() {
         return customerId;
     }
 
-    public void setCustomerId(int customerId) {
+    public void setCustomerId(String customerId) {
         this.customerId = customerId;
     }
 
@@ -86,11 +86,11 @@ public class Customer implements Serializable
         this.customerEmailAddress = customerEmailAddress;
     }
 
-    public int getAmount() {
+    public double getAmount() {
         return amount;
     }
 
-    public void setAmount(int amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
     }
 

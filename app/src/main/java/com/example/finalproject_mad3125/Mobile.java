@@ -15,7 +15,7 @@ public class Mobile extends Bill implements Serializable
         super();
     }
 
-    public Mobile(int billID, String billDate, String billType, double billAmount, String manufacturerName, String planName,
+    public Mobile(String billID, String billDate, String billType, double billAmount, String manufacturerName, String planName,
                   int mobileNumber, int internetGBUesd, int minutes)
     {
         super(billID,billDate,"Mobile",billAmount);

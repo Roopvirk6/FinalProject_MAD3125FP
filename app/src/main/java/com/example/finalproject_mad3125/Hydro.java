@@ -12,7 +12,7 @@ public class Hydro extends Bill implements Serializable
         super();
     }
 
-    public Hydro(int billID, String billDate, String billType, double billAmount, String agencyName, int unitConsumed)
+    public Hydro(String billID, String billDate, String billType, double billAmount, String agencyName, int unitConsumed)
     {
         super(billID,billDate,"Hydro",billAmount);
         this.agencyName = agencyName;

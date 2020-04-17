@@ -11,7 +11,7 @@ public class Internet extends Bill implements Serializable {
             super();
         }
 
-        public Internet(int billID, String billDate, String billType, double billAmount, String providerName, int internetGB )
+        public Internet(String billID, String billDate, String billType, double billAmount, String providerName, int internetGB )
         {
             super(billID,billDate,"Internet",billAmount);
             this.providerName = providerName;

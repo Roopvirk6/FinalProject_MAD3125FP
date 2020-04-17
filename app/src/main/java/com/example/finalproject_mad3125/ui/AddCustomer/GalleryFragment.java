@@ -43,6 +43,7 @@ public class GalleryFragment extends Fragment {
     String lastName;
     String custID;
     String email;
+    double amount;
     Bill bill = null;
     Customer customer = null;
 
@@ -103,12 +104,28 @@ public class GalleryFragment extends Fragment {
             lastName = edtLastName.getText().toString();
             custID = edtCustID.getText().toString();
             email=edtEmail.getText().toString();
+            amount = Double.parseDouble(edtAmount.getText().toString());
+            Customer customer1 = new Customer();
+            customer1.setCustomerFirstName(firstname);
+            customer1.setCustomerLastName(lastName);
+            customer1.setCustomerId(custID);
+            customer1.setCustomerEmailAddress(email);
+            customer1.setAmount(amount);
+            singleton.addCustomer(customer1);
+            Hydro hydro = new Hydro();
+            hydro.setBillID(custID);
+            hydro.setBillType("Hydro");
+            hydro.setBillDate("02-01-2020");
+            hydro.setBillAmount(200.0);
+            customer.setBillType("Hydro");
+            customer.setBill(hydro);
+            bill = hydro;
 
-           Hydro hydro = new Hydro();
-            hydro.setBillID();
-            bill  = hydro;
+        }
 
-            //Log.d("DataEntry", String.valueOf(intern.getAge()));
+        if (rbInternet.isChecked())
+        {
+            
         }
 
     }

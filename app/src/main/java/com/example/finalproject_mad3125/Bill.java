@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public abstract class Bill implements Serializable
 {
-    private int billID;
+    private String billID;
     private String billDate;
     private String billType;
     private double billAmount;
@@ -14,7 +14,7 @@ public abstract class Bill implements Serializable
 
     }
 
-    public Bill(int billID, String billDate, String BType,double billAmount)
+    public Bill(String billID, String billDate, String BType,double billAmount)
     {
         this.billID = billID;
         this.billDate = billDate;
@@ -22,11 +22,11 @@ public abstract class Bill implements Serializable
         this.billAmount = billAmount;
     }
 
-    public int getBillID() {
+    public String getBillID() {
         return billID;
     }
 
-    public void setBillID(int billID) {
+    public void setBillID(String billID) {
         this.billID = billID;
     }
 
