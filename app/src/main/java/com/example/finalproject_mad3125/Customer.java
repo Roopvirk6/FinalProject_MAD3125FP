@@ -14,7 +14,7 @@ public class Customer implements Serializable
     private String customerLastName;
     private String customerEmailAddress;
     private int amount;
-    private int custImage;
+
     private Bill bill;
     private String billType;
 
@@ -43,13 +43,13 @@ public class Customer implements Serializable
     }
 
     public Customer(int customerId,
-                    String customerFirstName, String customerLastName, String customerEmailAddress, int amount, int custImage, String billType) {
+                    String customerFirstName, String customerLastName, String customerEmailAddress, int amount, String billType) {
         this.customerId=customerId;
         this.customerFirstName=customerFirstName;
         this.customerLastName=customerLastName;
         this.customerEmailAddress=customerEmailAddress;
         this.amount=amount;
-        this.custImage=custImage;
+
         this.billType = billType;
     }
 
@@ -92,14 +92,6 @@ public class Customer implements Serializable
 
     public void setAmount(int amount) {
         this.amount = amount;
-    }
-
-    public int getCustImage() {
-        return custImage;
-    }
-
-    public void setCustImage(int custImage) {
-        this.custImage = custImage;
     }
 
     public void printMyData()
