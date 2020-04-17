@@ -17,6 +17,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.finalproject_mad3125.Bill;
+import com.example.finalproject_mad3125.Customer;
 import com.example.finalproject_mad3125.R;
 import com.example.finalproject_mad3125.Singleton;
 
@@ -88,7 +89,11 @@ public class GalleryFragment extends Fragment {
         return root;
     }
 
+    public Customer addData()
+    {
+        
 
+    }
 
 
 }
