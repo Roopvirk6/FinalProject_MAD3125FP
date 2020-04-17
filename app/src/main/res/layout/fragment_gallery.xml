@@ -61,6 +61,45 @@
         android:hint="Amount"
         android:inputType="numberDecimal"/>
 
+        <LinearLayout
+            android:id="@+id/linearBillType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/rgbBillType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <RadioButton
+                    android:id="@+id/rbHydro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Hydro" />
+
+                <RadioButton
+                    android:id="@+id/rbInternet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Internet" />
+
+                <RadioButton
+                    android:id="@+id/rbMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mobile" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        
+
 
     </LinearLayout>
     </ScrollView>
