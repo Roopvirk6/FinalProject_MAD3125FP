@@ -35,11 +35,14 @@ public class GalleryFragment extends Fragment {
     Button btnSave;
 
     Singleton singleton= Singleton.getInstance();
+
     
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         View root = inflater.inflate(R.layout.fragment_gallery, container, false);
+
 
     }
 }
