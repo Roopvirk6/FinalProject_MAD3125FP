@@ -71,6 +71,10 @@ public class GalleryFragment extends Fragment {
         edtLastName = root.findViewById(R.id.edtLastName);
         edtEmail = root.findViewById(R.id.edtEmail);
         edtAmount = root.findViewById(R.id.edtAmount);
+        rgbBillType = root.findViewById(R.id.rgbBillType);
+        rbHydro = root.findViewById(R.id.rbHydro);
+        rbMobile = root.findViewById(R.id.rbMobile);
+        rbInternet = root.findViewById(R.id.rbInternet);
         btnSave = root.findViewById(R.id.btnSave);
 
 
@@ -95,7 +99,6 @@ public class GalleryFragment extends Fragment {
         custID = edtCustID.getText().toString();
         email=edtEmail.getText().toString();
         amount = Double.parseDouble(edtAmount.getText().toString());
-        btype = edtBillType.getText().toString();
         Customer customer = new Customer();
         customer.setCustomerFirstName(firstname);
         customer.setCustomerLastName(lastName);
