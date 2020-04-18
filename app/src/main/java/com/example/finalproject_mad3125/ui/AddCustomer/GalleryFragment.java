@@ -75,7 +75,21 @@ public class GalleryFragment extends Fragment {
         rbHydro = root.findViewById(R.id.rbHydro);
         rbMobile = root.findViewById(R.id.rbMobile);
         rbInternet = root.findViewById(R.id.rbInternet);
+        edtAgencyName = root.findViewById(R.id.edtAgencyName);
+        edtUnitsConsumed = root.findViewById(R.id.edtUnitsConsumed);
+        edtProviderName = root.findViewById(R.id.edtProviderName);
+        edtInternetUsed = root.findViewById(R.id.edtInternetUsed);
+        edtManufacturerName = root.findViewById(R.id.edtManufacturerName);
+        edtPlanName = root.findViewById(R.id.edtPlanName);
+        edtMinutes = root.findViewById(R.id.edtMinutes);
+        edtInternetGBUsed = root.findViewById(R.id.edtInternetGBUsed);
+        edtMobileNumber = root.findViewById(R.id.edtMobileNumber);
         btnSave = root.findViewById(R.id.btnSave);
+        linearHydroBill = root.findViewById(R.id.linearHydroBill);
+        linearInternet = root.findViewById(R.id.linearInternet);
+        linearMobileBill = root.findViewById(R.id.linearMobileBill);
+
+
 
 
 
