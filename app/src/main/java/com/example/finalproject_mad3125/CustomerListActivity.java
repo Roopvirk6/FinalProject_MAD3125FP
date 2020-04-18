@@ -57,6 +57,18 @@ public class CustomerListActivity extends AppCompatActivity {
         InternetLayout.setVisibility(View.GONE);
         MobileLayout.setVisibility(View.GONE);
 
+        Customer e = (Customer) getIntent().getSerializableExtra("customer");
+        System.out.println(e.getCustomerId());
+        System.out.println(e.getCustomerFirstName());
+        System.out.println(e.getCustomerLastName());
+        System.out.println(e.getCustomerEmailAddress());
+        System.out.println(e.getAmount());
+
+        edtCustomerIds.setText(String.valueOf(e.getCustomerId()));
+        edtFirstNames.setText(String.valueOf(e.getCustomerFirstName()));
+        edtLastNames.setText(String.valueOf(e.getCustomerLastName()));
+        edtEmailAddresss.setText(String.valueOf(e.getCustomerEmailAddress()));
+        edtAmounts.setText(String.valueOf(e.getAmount()));
         
     }
 
