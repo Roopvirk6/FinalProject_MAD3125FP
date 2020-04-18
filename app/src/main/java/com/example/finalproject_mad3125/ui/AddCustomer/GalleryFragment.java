@@ -142,6 +142,7 @@ public class GalleryFragment extends Fragment {
         customer.setCustomerEmailAddress(email);
         customer.setAmount(amount);
         customer.setBillType(btype);
+        addDataBill(customer);
         singleton.addCustomer(customer);
         return customer;
 
@@ -149,9 +150,9 @@ public class GalleryFragment extends Fragment {
 
     }
 
-    public void addDataBill()
+    public void addDataBill(Customer cust)
     {
-        
+
     }
 
 
