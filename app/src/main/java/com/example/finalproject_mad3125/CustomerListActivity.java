@@ -58,6 +58,7 @@ public class CustomerListActivity extends AppCompatActivity {
         MobileLayout.setVisibility(View.GONE);
 
         Customer e = (Customer) getIntent().getSerializableExtra("customer");
+        Bill b = (Bill) getIntent().getSerializableExtra("bill");
         System.out.println(e.getCustomerId());
         System.out.println(e.getCustomerFirstName());
         System.out.println(e.getCustomerLastName());
@@ -69,7 +70,34 @@ public class CustomerListActivity extends AppCompatActivity {
         edtLastNames.setText(String.valueOf(e.getCustomerLastName()));
         edtEmailAddresss.setText(String.valueOf(e.getCustomerEmailAddress()));
         edtAmounts.setText(String.valueOf(e.getAmount()));
-        
+
+        if (b instanceof Hydro) {
+            HydroLayout.setVisibility(View.VISIBLE);
+            edtAgencyNames.setText(((Hydro) b).getAgencyName());
+            edtUnitConsumeds.setText(String.valueOf(((Hydro) b).getUnitConsumed()));
+        }
+
+        if (b instanceof Internet) {
+            InternetLayout.setVisibility(View.VISIBLE);
+            edtProviderNames.setText(((Internet) b).getProviderName());
+            edtUnitConsumedGB.setText(String.valueOf(((Internet) b).getInternetGB())+ "GB");
+        }
+
+        if (b instanceof Mobile)
+        {
+            MobileLayout.setVisibility(View.VISIBLE);
+            edtManufacturerNames.setText(((Mobile) b).getManufacturerName());
+            edtMinutesUsed.setText(String.valueOf(((Mobile) b).getMinutes())+ "minutes");
+            edtInternetGBUsed.setText(String.valueOf(((Mobile) b).getInternetGBUesd())+ "GB");
+            edtPlanNames.setText(((Mobile) b).getPlanName());
+            edtMobileNumbers.setText(((Mobile) b).getMobileNumber());
+
+
+
+
+        }
+
+
     }
 
 
