@@ -175,6 +175,18 @@ public class GalleryFragment extends Fragment {
             bill = internet;
         }
 
+        if(rbMobile.isChecked())
+        {
+            Mobile mobile = new Mobile();
+            mobile.setBillID(edtCustID.getText().toString());
+            mobile.setBillType("Mobile");
+            mobile.setBillDate("02-09-2020");
+            mobile.setBillAmount(400.0);
+            cust.setBill(mobile);
+            cust.setBillType("Mobile");
+            bill = mobile;
+        }
+
     }
 
 
