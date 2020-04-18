@@ -141,7 +141,6 @@ public class GalleryFragment extends Fragment {
         customer.setCustomerId(custID);
         customer.setCustomerEmailAddress(email);
         customer.setAmount(amount);
-        customer.setBillType(btype);
         addDataBill(customer);
         singleton.addCustomer(customer);
         return customer;
@@ -152,6 +151,29 @@ public class GalleryFragment extends Fragment {
 
     public void addDataBill(Customer cust)
     {
+        if (rbHydro.isChecked())
+        {
+            Hydro hydro = new Hydro();
+            hydro.setBillID(edtCustID.getText().toString());
+            hydro.setBillType("Hydro");
+            hydro.setBillDate("02-01-2020");
+            hydro.setBillAmount(300.0);
+            cust.setBillType("Hydro");
+            cust.setBill(hydro);
+            bill = hydro;
+        }
+
+        if(rbInternet.isChecked())
+        {
+            Internet internet = new Internet();
+            internet.setBillID(edtCustID.getText().toString());
+            internet.setBillType("Internet");
+            internet.setBillDate("02-02-2020");
+            internet.setBillAmount(900.0);
+            cust.setBillType("Internet");
+            cust.setBill(internet);
+            bill = internet;
+        }
 
     }
 
