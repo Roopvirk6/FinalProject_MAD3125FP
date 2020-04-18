@@ -3,6 +3,7 @@ package com.example.finalproject_mad3125;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -50,6 +51,13 @@ public class CustomerListActivity extends AppCompatActivity {
         HydroLayout = findViewById(R.id.HydroLayout);
         InternetLayout = findViewById(R.id.linearInternet1);
         MobileLayout = findViewById(R.id.MobileLayout);
+
+
+        HydroLayout.setVisibility(View.GONE);
+        InternetLayout.setVisibility(View.GONE);
+        MobileLayout.setVisibility(View.GONE);
+
+        
     }
 
 
