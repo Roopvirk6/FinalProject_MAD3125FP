@@ -89,6 +89,10 @@ public class GalleryFragment extends Fragment {
         linearInternet = root.findViewById(R.id.linearInternet);
         linearMobileBill = root.findViewById(R.id.linearMobileBill);
 
+        linearHydroBill.setVisibility(View.GONE);
+        linearInternet.setVisibility(View.GONE);
+        linearMobileBill.setVisibility(View.GONE);
+
         rgbBillType.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
@@ -188,7 +192,5 @@ public class GalleryFragment extends Fragment {
         }
 
     }
-
-
 
 }
