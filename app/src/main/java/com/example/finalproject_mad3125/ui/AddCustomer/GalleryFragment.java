@@ -190,7 +190,6 @@ public class GalleryFragment extends Fragment {
             cust.setBillType("Mobile");
             bill = mobile;
         }
-
     }
 
 }
