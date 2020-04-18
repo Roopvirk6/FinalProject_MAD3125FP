@@ -56,7 +56,7 @@ public class GalleryFragment extends Fragment {
     String lastName;
     String custID;
     String email;
-    String btype;
+    //String btype;
     double amount;
     Bill bill = null;
     Customer customer = null;
