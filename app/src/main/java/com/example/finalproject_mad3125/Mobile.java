@@ -6,9 +6,9 @@ public class Mobile extends Bill implements Serializable
 {
     private String manufacturerName;
     private String planName;
-    private int mobileNumber;
-    private int internetGBUesd;
-    private int minutes;
+    private String mobileNumber;
+    private double internetGBUesd;
+    private double minutes;
 
     public Mobile()
     {
@@ -16,7 +16,7 @@ public class Mobile extends Bill implements Serializable
     }
 
     public Mobile(String billID, String billDate, String billType, double billAmount, String manufacturerName, String planName,
-                  int mobileNumber, int internetGBUesd, int minutes)
+                 String mobileNumber, double internetGBUesd, double minutes)
     {
         super(billID,billDate,"Mobile",billAmount);
         this.manufacturerName = manufacturerName;
@@ -42,27 +42,27 @@ public class Mobile extends Bill implements Serializable
         this.planName = planName;
     }
 
-    public int getMobileNumber() {
+    public String getMobileNumber() {
         return mobileNumber;
     }
 
-    public void setMobileNumber(int mobileNumber) {
+    public void setMobileNumber(String mobileNumber) {
         this.mobileNumber = mobileNumber;
     }
 
-    public int getInternetGBUesd() {
+    public double getInternetGBUesd() {
         return internetGBUesd;
     }
 
-    public void setInternetGBUesd(int internetGBUesd) {
+    public void setInternetGBUesd(double internetGBUesd) {
         this.internetGBUesd = internetGBUesd;
     }
 
-    public int getMinutes() {
+    public double getMinutes() {
         return minutes;
     }
 
-    public void setMinutes(int minutes) {
+    public void setMinutes(double minutes) {
         this.minutes = minutes;
     }
 

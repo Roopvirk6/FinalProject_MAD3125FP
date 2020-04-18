@@ -16,11 +16,9 @@ import com.example.finalproject_mad3125.R;
 
 public class AddNewBillFragment extends Fragment {
 
-    private AddNewBillViewModel mViewModel;
 
-    public static AddNewBillFragment newInstance() {
-        return new AddNewBillFragment();
-    }
+
+
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
@@ -31,8 +29,7 @@ public class AddNewBillFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(AddNewBillViewModel.class);
-        // TODO: Use the ViewModel
+
     }
 
 }

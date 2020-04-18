@@ -5,13 +5,13 @@ import java.io.Serializable;
 public class Internet extends Bill implements Serializable {
 
         private String providerName;
-        private int internetGB;
+        private double internetGB;
 
         public Internet(){
             super();
         }
 
-        public Internet(String billID, String billDate, String billType, double billAmount, String providerName, int internetGB )
+        public Internet(String billID, String billDate, String billType, double billAmount, String providerName, double internetGB )
         {
             super(billID,billDate,"Internet",billAmount);
             this.providerName = providerName;
@@ -26,11 +26,11 @@ public class Internet extends Bill implements Serializable {
         this.providerName = providerName;
     }
 
-    public int getInternetGB() {
+    public double getInternetGB() {
         return internetGB;
     }
 
-    public void setInternetGB(int internetGB) {
+    public void setInternetGB(double internetGB) {
         this.internetGB = internetGB;
     }
 

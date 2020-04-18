@@ -161,7 +161,9 @@ public class GalleryFragment extends Fragment {
             hydro.setBillID(edtCustID.getText().toString());
             hydro.setBillType("Hydro");
             hydro.setBillDate("02-01-2020");
-            hydro.setBillAmount(300.0);
+            hydro.setBillAmount(Double.parseDouble(edtAmount.getText().toString()));
+            hydro.setAgencyName(edtAgencyName.getText().toString());
+            hydro.setUnitConsumed(Integer.parseInt(edtUnitsConsumed.getText().toString()));
             cust.setBillType("Hydro");
             cust.setBill(hydro);
             bill = hydro;
@@ -173,7 +175,9 @@ public class GalleryFragment extends Fragment {
             internet.setBillID(edtCustID.getText().toString());
             internet.setBillType("Internet");
             internet.setBillDate("02-02-2020");
-            internet.setBillAmount(900.0);
+            internet.setBillAmount(Double.parseDouble(edtAmount.getText().toString()));
+            internet.setProviderName(edtProviderName.getText().toString());
+            internet.setInternetGB(Double.parseDouble(edtInternetGBUsed.getText().toString()));
             cust.setBillType("Internet");
             cust.setBill(internet);
             bill = internet;
@@ -185,7 +189,11 @@ public class GalleryFragment extends Fragment {
             mobile.setBillID(edtCustID.getText().toString());
             mobile.setBillType("Mobile");
             mobile.setBillDate("02-09-2020");
-            mobile.setBillAmount(400.0);
+            mobile.setBillAmount(Double.parseDouble(edtAmount.getText().toString()));
+            mobile.setInternetGBUesd(Double.parseDouble(edtInternetGBUsed.getText().toString()));
+            mobile.setManufacturerName(edtManufacturerName.getText().toString());
+            mobile.setMinutes(Double.parseDouble(edtMinutes.getText().toString()));
+            mobile.setMobileNumber(edtMobileNumber.getText().toString());
             cust.setBill(mobile);
             cust.setBillType("Mobile");
             bill = mobile;
