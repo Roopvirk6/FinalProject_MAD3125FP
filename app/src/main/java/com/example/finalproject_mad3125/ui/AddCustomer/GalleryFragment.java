@@ -89,10 +89,32 @@ public class GalleryFragment extends Fragment {
         linearInternet = root.findViewById(R.id.linearInternet);
         linearMobileBill = root.findViewById(R.id.linearMobileBill);
 
+        rgbBillType.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
 
 
+                linearHydroBill.setVisibility(View.GONE);
+                linearInternet.setVisibility(View.GONE);
+                linearMobileBill.setVisibility(View.GONE);
+                switch (i)
+                {
+                    case R.id.rbHydro:
+                        linearHydroBill.setVisibility(View.VISIBLE);
+                        break;
 
+                    case R.id.rbInternet:
+                        linearInternet.setVisibility(View.VISIBLE);
 
+                        break;
+
+                    case R.id.rbMobile:
+                        linearMobileBill.setVisibility(View.VISIBLE);
+                        break;
+                }
+            }
+
+        });
 
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -125,6 +147,11 @@ public class GalleryFragment extends Fragment {
 
 
 
+    }
+
+    public void addDataBill()
+    {
+        
     }
 
 
