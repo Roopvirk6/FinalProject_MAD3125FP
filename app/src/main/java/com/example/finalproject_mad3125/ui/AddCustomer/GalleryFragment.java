@@ -32,7 +32,22 @@ public class GalleryFragment extends Fragment {
     EditText edtLastName;
     EditText edtEmail;
     EditText edtAmount;
-    EditText edtBillType;
+    RadioGroup rgbBillType;
+    RadioButton rbHydro;
+    RadioButton rbInternet;
+    RadioButton rbMobile;
+    LinearLayout linearHydroBill;
+    EditText edtAgencyName;
+    EditText edtUnitsConsumed;
+    LinearLayout linearInternet;
+    EditText edtProviderName;
+    EditText edtInternetUsed;
+    LinearLayout linearMobileBill;
+    EditText edtManufacturerName;
+    EditText edtPlanName;
+    EditText edtMobileNumber;
+    EditText edtInternetGBUsed;
+    EditText edtMinutes;
     Button btnSave;
 
 
@@ -56,7 +71,6 @@ public class GalleryFragment extends Fragment {
         edtLastName = root.findViewById(R.id.edtLastName);
         edtEmail = root.findViewById(R.id.edtEmail);
         edtAmount = root.findViewById(R.id.edtAmount);
-        edtBillType = root.findViewById(R.id.edtBillType);
         btnSave = root.findViewById(R.id.btnSave);
 
 
