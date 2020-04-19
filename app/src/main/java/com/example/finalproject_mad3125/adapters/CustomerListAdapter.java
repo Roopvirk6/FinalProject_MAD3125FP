@@ -44,6 +44,7 @@ public class CustomerListAdapter extends RecyclerView.Adapter<CustomerListAdapte
             final Customer mEmp = customerList.get(position);
             holder.custName.setText(mEmp.getCustomerFirstName());
             holder.bType.setText(mEmp.getBillType());
+            holder.emailAddress.setText(mEmp.getCustomerEmailAddress());
 
 
             //Setting click on cell
@@ -70,12 +71,14 @@ public class CustomerListAdapter extends RecyclerView.Adapter<CustomerListAdapte
         {
             public TextView custName;
             public TextView bType;
+            public TextView emailAddress;
 
             public DemoViewHolder(@NonNull View itemView)
             {
                 super(itemView);
                 custName = itemView.findViewById(R.id.txtCustomerName);
                 bType = itemView.findViewById(R.id.txtBillType);
+                emailAddress = itemView.findViewById(R.id.textEmailAddress1);
 
             }
         }

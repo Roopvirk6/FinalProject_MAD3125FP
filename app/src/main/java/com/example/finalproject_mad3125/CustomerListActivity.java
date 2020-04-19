@@ -95,7 +95,7 @@ public class CustomerListActivity extends AppCompatActivity {
             edtMobileNumbers.setText(((Mobile) b).getMobileNumber());
 
         }
-            this.billType.setText(e.getBill() == null ? "null": e.getBill() instanceof Hydro ? "INTERNET" : "MOBILE");
+           // this.billType.setText(e.getBill() == null ? "null": e.getBill() instanceof Hydro ? "INTERNET" : "MOBILE");
             billType.setText("Customer has "+ e.getBillType()+ "\n\n");
             billType.append("Bill Date"+ e.getBill().getBillDate()+ "\n\n");
             billType.append("Bill Id"+ e.getBill().getBillID()+ "\n\n");
