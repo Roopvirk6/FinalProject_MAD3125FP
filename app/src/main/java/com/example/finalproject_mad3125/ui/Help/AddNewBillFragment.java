@@ -51,5 +51,5 @@ public class AddNewBillFragment extends Fragment {
 
         return root;
     }
-    
+
 }
