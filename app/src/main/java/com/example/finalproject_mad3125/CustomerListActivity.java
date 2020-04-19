@@ -23,6 +23,7 @@ public class CustomerListActivity extends AppCompatActivity {
     TextView edtPlanNames;
     TextView edtMinutesUsed;
     TextView edtInternetGBUsed;
+    TextView billType;
     LinearLayout HydroLayout;
     LinearLayout InternetLayout;
     LinearLayout MobileLayout;
@@ -51,6 +52,7 @@ public class CustomerListActivity extends AppCompatActivity {
         HydroLayout = findViewById(R.id.HydroLayout);
         InternetLayout = findViewById(R.id.linearInternet1);
         MobileLayout = findViewById(R.id.MobileLayout);
+        billType = findViewById(R.id.textView26);
 
 
         HydroLayout.setVisibility(View.GONE);
@@ -93,7 +95,10 @@ public class CustomerListActivity extends AppCompatActivity {
             edtMobileNumbers.setText(((Mobile) b).getMobileNumber());
 
         }
-
+            this.billType.setText(e.getBill() == null ? "null": e.getBill() instanceof Hydro ? "INTERNET" : "MOBILE");
+            billType.setText("Customer has "+ e.getBillType()+ "\n\n");
+            billType.append("Bill Date"+ e.getBill().getBillDate()+ "\n\n");
+            billType.append("Bill Id"+ e.getBill().getBillID()+ "\n\n");
 
     }
 
