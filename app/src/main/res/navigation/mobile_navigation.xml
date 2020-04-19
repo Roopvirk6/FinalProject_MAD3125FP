@@ -24,7 +24,7 @@
 
     <fragment
         android:id="@+id/add_new_bill"
-        android:name="com.example.finalproject_mad3125.ui.AddNewBill.AddNewBillFragment"
+        android:name="com.example.finalproject_mad3125.ui.Help.AddNewBillFragment"
         android:label="Help"
         tools:layout="@layout/add_new_bill_fragment" />
 

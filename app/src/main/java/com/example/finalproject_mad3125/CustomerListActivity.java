@@ -91,7 +91,7 @@ public class CustomerListActivity extends AppCompatActivity {
             edtInternetGBUsed.setText(String.valueOf(((Mobile) b).getInternetGBUesd())+ "GB");
             edtPlanNames.setText(((Mobile) b).getPlanName());
             edtMobileNumbers.setText(((Mobile) b).getMobileNumber());
-            
+
         }
 
 
