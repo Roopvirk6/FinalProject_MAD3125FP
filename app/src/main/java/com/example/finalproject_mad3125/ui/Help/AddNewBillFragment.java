@@ -30,6 +30,14 @@ public class AddNewBillFragment extends Fragment {
 
             }
         });
+        alertDialogBuilder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
+        AlertDialog nAlertDialog=alertDialogBuilder.create();
+        nAlertDialog.show();
         
     }
 
