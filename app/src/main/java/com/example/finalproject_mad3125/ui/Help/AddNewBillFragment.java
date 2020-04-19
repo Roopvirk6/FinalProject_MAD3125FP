@@ -38,19 +38,18 @@ public class AddNewBillFragment extends Fragment {
         });
         AlertDialog nAlertDialog=alertDialogBuilder.create();
         nAlertDialog.show();
-        
+
     }
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             ViewGroup container, Bundle savedInstanceState) {
+
+        View root = inflater.inflate(R.layout.add_new_bill_fragment, container, false);
 
 
 
+        showAlert();
 
-
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.add_new_bill_fragment, container, false);
+        return root;
     }
-
-
-
+    
 }
