@@ -99,6 +99,7 @@ public class CustomerListActivity extends AppCompatActivity {
             billType.setText("Customer has "+ e.getBillType()+ "\n\n");
             billType.append("Bill Date"+ e.getBill().getBillDate()+ "\n\n");
             billType.append("Bill Id"+ e.getBill().getBillID()+ "\n\n");
+            billType.append("Bill Amount"+ e.getBill().getBillAmount()+ "\n");
 
     }
 
