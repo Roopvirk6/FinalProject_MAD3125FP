@@ -14,3 +14,10 @@ VARIOUS FOLDERS:
 •	https://stackoverflow.com/questions/tagged/datepicker
 •	https://stackoverflow.com/questions/49249234/what-is-parcelable-in-android
 •	https://material.io/develop/android/
+<img src="https://s4.gifyu.com/images/Screen-Shot-2020-04-20-at-9.09.13-PM.png" alt="Login Screen" height="400" width="400" border="0">
+<img src="https://s4.gifyu.com/images/Screen-Shot-2020-04-20-at-9.10.56-PM.png" alt="Main menu" height="400" width="400" border="0">
+<img src="https://s4.gifyu.com/images/Screen-Shot-2020-04-20-at-9.10.15-PM.png" alt="Home menu" height="400" width="400" border="0">
+<img src="https://s4.gifyu.com/images/Screen-Shot-2020-04-20-at-9.11.50-PM-1.png" alt="Add new customer menu" height="400" width="400" border="0">
+<img src="https://s4.gifyu.com/images/Screen-Shot-2020-04-20-at-9.11.50-PM.png" alt="Add new customer menu" height="400" width="400" border="0">
+<img src="https://s4.gifyu.com/images/Screen-Shot-2020-04-20-at-9.12.25-PM.png" alt="Show details menu" height="400" width="400" border="0">
+<img src="https://s4.gifyu.com/images/Screen-Shot-2020-04-20-at-9.13.16-PM.png" alt="Contact us menu" height="400" width="400" border="0">
